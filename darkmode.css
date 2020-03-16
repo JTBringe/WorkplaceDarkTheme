@@ -1,0 +1,824 @@
+/**
+ * Facebook Workplace custom theme CSS settings - "Dark theme"
+ */
+
+/**
+ * Override some CSS variables in the Workplace settings
+ */
+:root {
+	--divider: #444;
+	--accent: lightBlue;
+	--card-background: #222;
+	--comment-background: #222;
+	--primary-deemphasized-button-background: inherit;
+	--primary-button-text: #eee;
+	--primary-text: #ddd;
+	--nav-bar-background: #222;
+	--secondary-text: #ddd;
+	--secondary-button-background: #333;
+	--shadow-inset: #555;
+	--surface-background: #222;
+	--wig-divider: #333;
+	--wig-input-background: #222;
+	--wig-page-background: #121212;
+	--wig-chat-background: #222;
+	--wig-nav-background: #222;
+	
+	--material-dark-primary: #BB86FC;
+	--material-dark-primary-variant: #3700B3;
+	--material-dark-secondary: #03DAC6;
+	--material-dark-background: #121212;
+	--material-dark-surface: #121212;
+	--material-dark-error: #CF6679;
+	
+	--padding-background: #121212;
+	--thread-firstpost-background: #2a2a2a;
+	--navigator-left-background: #222;
+	--navigator-main-background: #222;
+	
+	--input-field-border-radius: 0px;
+}
+
+/* scrollbar settings */
+html {
+  scrollbar-face-color: #444;
+  scrollbar-base-color: #444;
+  scrollbar-3dlight-color: #444;
+  scrollbar-highlight-color: #444;
+  scrollbar-track-color: #121212;
+  scrollbar-arrow-color: #121212;
+  scrollbar-shadow-color: #444;
+  scrollbar-dark-shadow-color: #444;
+}
+
+::-webkit-scrollbar { 
+	width: 12px; height: 3px; 
+}
+::-webkit-scrollbar-button { 
+	background-color: #666; 
+}
+::-webkit-scrollbar-track { 
+	background-color: #444; 
+}
+::-webkit-scrollbar-track-piece { 
+	background-color: #121212; 
+}
+::-webkit-scrollbar-thumb { 
+	height: 50px; 
+	background-color: #666; 
+	border-radius: 1px; 
+}
+::-webkit-scrollbar-corner { 
+	background-color: #444; 
+}
+::-webkit-resizer { 
+	background-color: #666; 
+}
+
+body {
+	color: #ccc;
+}
+
+.userContent,
+body, button, input, label, select, td, textarea {
+	font-family: "Segoe UI", "Segoe UI Emoji", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+}
+
+/* article content area width */
+div#contentArea { 
+	width: 800px !important;
+}
+
+/* controls the position of the ... icon */
+._4bl7._3-96 {
+    width: 800px !important;
+}
+
+/* search result area width */
+div._1qkx {
+    width: 800px !important;
+}
+/* what is happening stream section */
+div._6uka {
+    width: 800px !important;
+}
+/* notifications area width */
+div._7ibx {
+    width: 800px !important;
+}
+
+
+/* search result entry */
+._15wh {
+    border-bottom: 1px solid #333 !important;
+}
+
+/* put "..." icon for replies on the right side */
+._6c7j {
+	float: right !important;
+}
+
+/* "XYZ did something" at the top of the article */
+._5v3q ._14f3._5pbw._5pbw .fcg, ._5v3q ._14f3._1qbu._5pbw .fcg {
+    color: #999 !important;
+}
+
+._5vb_ ._dcs .__c_, ._5vb_ ._6l- {
+    background-color: var(--thread-firstpost-background);
+}
+
+/* general hyperlink color */
+html a { 
+	color: rgb(173, 196, 200) !important; 
+}
+
+/* hashtag color */
+._58cn ._58cl {
+	color: rgb(173, 196, 200) !important; 
+}
+
+div#content > div { 
+	background-color: var(--material-dark-background); 
+}
+div#contentArea {
+	background-color: var(--material-dark-background);
+}
+/* thread first post background */
+div.userContentWrapper {
+	background-color: var(--thread-firstpost-background);
+	color: #ccc;
+	width: 800px;
+	border-radius: 3px;
+}
+span.timeStampContent {
+	color: #eee;
+}
+div[contenteditable='true'] {
+	color: #ddd;
+}
+div[role='article'] {
+	background-color: #222;
+	margin-top: 40px;
+}
+div[role='article'][aria-label='Comment'] {
+	margin-top: 2px;
+}
+div[role='article'][aria-label='Comment reply'] {
+	margin-top: 2px;
+}
+
+div[aria-label='Add'] {
+	background-color: #777;	
+}
+
+/* reactions count */
+span._3dlh._3dli {
+	background-color: var(--thread-firstpost-background);
+	color: #aaa;
+}
+/* comment section background */
+._6ssm,
+._6sr_ {
+	background-color: #222;
+}
+/* post subheader h2 */
+span._4yxo,
+/* post subheader h3 */
+span._4yxo._4yxp,
+._3w8y ._4yxo,
+/* post header h1 */
+h2._2cuy._509y._2vxa {
+	color: #eee !important;
+}
+
+div._39k5._5s6c span._4yxo {
+	color: inherit !important;
+}
+
+/* width of the leftmost navigator with icons */
+div[role='navigation'][aria-label='Workplace'] {
+	width: 55px;
+	border-left: 0 !important;
+	background-color: var(--navigator-left-background);
+}
+/* width of the main navigator pane with search, home, groups */
+.eq3iqbgf {
+	max-width: 320px !important;
+}
+/* background color of the main navigator */
+div[data-testid="galahad-channel"] {
+	background-color: var(--navigator-main-background);
+}
+
+/* background color of the main navigator */
+.gp5lzjy8 {
+ 	background-color: var(--navigator-main-background);
+}
+
+section[role='complementary'] > div:nth-child(1) {
+	border-left: 0;
+}
+/* main navigator entry text color */
+.oo9gr5id {
+	color: #eee !important;
+}
+
+/* gradient in left-hand side navigator */
+.f7flnzcu,
+.mxonaowt {
+	background-image: none !important;
+}
+
+div.UFIList {
+	background-color: #333 !important;
+}
+div.UFIComment {
+	background-color: #555;
+}
+/* write a comment box */
+div.UFIInputContainer {
+	border-radius: 0 !important;
+}
+/* statistics */
+div._ipo,
+/* people who have reacted */
+span._4arz {
+	background-color: var(--thread-firstpost-background) !important;
+}
+/* main content area background */
+.oitujibm.p97oqouy {
+	background-color: var(--padding-background);
+}
+/* article border */
+._4-u2 {
+	border: 0 !important;
+}
+/* right-hand side navigator */
+.po7knmyp {
+	background-color: var(--padding-background) !important;
+}
+div[role='heading'],
+div[role='feed'] {
+	background-color: var(--material-dark-background);
+}
+/* thread comments area background color */
+._6sr_ {
+	background-color: #222 !important;
+	border-top: 1px solid #333 !important;
+}
+/* thread comment bubble settings */
+.UFICommentActorAndBody,
+._6svu {
+	background-color: #222 !important;
+	color: #ccc !important;
+	border-radius: 0px !important;
+}
+div.UFIContainer, 
+div.UFIList, 
+div.UFIReplyList, 
+div.UFIRow {
+	background-color: #222 !important;
+	border-top: 0 !important;
+}
+/* right navigator border */
+.hxibb5oe {
+	border-left: 0;
+}
+div[role='region'] {
+	background-color: var(--material-dark-background);
+}
+/* write a comment box */
+._129h {
+	border-radius: 0px !important;
+	border: 0px !important;
+}
+/* thread first post settings */
+._6sw0 {
+	border-bottom: 1px solid #333 !important;
+}
+/* line above like and comment buttons */
+._4_dr._20h5 {
+	border-bottom: 0 !important;
+}
+/* top header */
+.ckn3yfg8 {
+	border-bottom: 0 !important;
+}
+/* reply list padding before user image */
+._6ssk {
+	padding-left: 12px;
+}
+/* center images and content */
+a[rel='theater'],
+._3eqw,
+div.mtm > div:nth-child(1) {
+	margin: auto;
+}
+/* comment section background color */
+._3b-9 {
+	background-color: #222 !important;
+}
+div[aria-label='Quick Chat'] {
+	border: 0 !important;
+}
+/* post thread form background */
+div[role='presentation'] > div[data-testid="react-composer-root"] {
+	background-color: #222 !important;
+}
+
+/* border after "XYZ was tagged" */
+._5v3q ._5mxv {
+    border-top-color: #333;
+}
+
+/* thread compose box */
+._4d6h {
+	background-color: #222 !important;
+	border-bottom: 1px solid #333 !important;
+}
+/* pinned posts header */
+div._4-u8 {
+	background-color: #222;
+	color: #eee;
+}
+/* pinned posts border */
+._1brn>._4ewu {
+    border-bottom: 1px solid #333 !important;
+}
+
+/* container for like, heart etc icons */
+._1n9k {
+	background: none !important;
+}
+/* message reaction container */
+._1lha,
+._1lg- {
+	background: none !important;
+	border-right: 0 !important;
+	box-shadow: none !important;
+}
+/* reaction count */
+._1lld {
+	color: #fff !important;
+}
+/* bottom of the group article listing */
+._3mqf {
+	text-shadow: none !important;
+}
+/* write a comment field */
+._129h {
+	background-color: #333 !important;
+}
+/* join button color */
+._517h, ._59pe:focus, ._59pe:hover {
+    background-color: #222;
+    border-color: #444;
+}
+/* divider line between navigation elements */
+.dz5li4og {
+	border-right: 0;
+}
+._j1x,
+._j1y {
+	color: inherit !important;
+}
+
+/* border after group name */
+._5v3q .w_1dm4zh8j4v {
+    border-bottom-color: #333 !important;
+}
+
+/* font color in the "post a new thread box" */
+._5qtn ._5qtp {
+    color: #eee;
+}
+
+/* font size under left hand navigator list elements */
+.jq4qci2q {
+    font-size: .8775rem;
+}
+/* font settings in the left hand navigator list elements */
+.ekzkrbhg {
+	font-weight: normal;
+}
+/* "Remember this includes people ..." */
+._57d8 {
+	background-color: inherit;
+}
+/* "Remember this includes people ..." */
+._16ve,
+._1dd0 {
+    border-top: 1px solid #333 !important;
+}
+
+/* text under Get Started With Workplace */
+._2iex {
+    color: #ddd;
+}
+
+/* end of infinite scroll area in group */
+.ecyya8lq {
+	padding-bottom: 0;
+}
+
+/* members list header */
+._364n ._grm {
+	background-color: var(--material-dark-background) !important;
+}
+/* members list boxes */
+.uiBoxWhite {
+	background-color: inherit !important;
+}
+/* top recent posts heading */
+._3kkd, ._3kke {
+    color: #ddd !important;
+}
+
+/* photos view */
+._dut {
+    background-color: inherit !important;
+    border-bottom: 0 !important;
+    border-top: 0 !important;
+}
+
+/* about */
+._611j, ._6qqv {
+	background: var(--thread-firstpost-background) !important;
+	border-bottom: solid 1px #444;
+}
+
+._1pfv .fwb, ._1pfv .profileLink, ._1pfv > a, ._1pfw {
+    color: #eee;
+    font-weight: normal;
+}
+
+/* notification white background bug */
+._7ibx {
+    background-color: inherit !important;
+}
+
+/* border of an embedded linked site */
+._6a15 {
+    border: 1px solid #444 !important;
+}
+
+/* border top of an embedded article link */
+._3eqz._5cwb ._3ekx {
+	border-top: 0 !important;
+}
+
+/* embedded article text color */
+._4fzb ._5pco, ._4fzb ._5pco p {
+    color: #ddd !important;
+}
+
+._4fzb {
+    border: 1px solid #222 !important;
+}
+
+/* -------------------------------- chat related settings -------------------------------- */
+
+/* chat background */
+/*
+div[aria-label='Messages'] {
+	background-color: #fff;
+}
+*/
+
+/* chat background border areas */
+/*
+div[role='presentation'] > div._4u-c {
+	background-color: #fff;
+}
+*/
+
+/* chat background border areas */
+._6q1a ._4sp8, ._6q1a ._2sdm, #facebook ._6q1a._z4_ {
+    background-color: var(--padding-background);
+}
+
+/* chat message author */
+._497p,
+._4k7a,
+._ih3 {
+	color: #ddd !important;
+	font-weight: bold;
+}
+
+/* chat text element */
+._5i_d .__6k {
+    color: #ccc;
+}
+
+/* close chatbox down-arrow */
+
+i.hu5pjgll {
+	filter: invert(0.5) !important;
+}
+
+/* org chart view */
+._2997 ._299e, ._2994 ._2999 ._299e {
+    background-color: #333;
+}
+
+._2997 ._299e {
+    border: solid 1px #666;
+}
+
+/* upcoming events header */
+._33gp ._38my, ._5dw9 ._38my {
+    color: #eee !important;
+}
+
+
+/* Directory */
+._5h92 {
+	border-color: #444 !important;
+	background-color: #333 !important;
+}
+
+._13a-, ._13b0 {
+	color: #ccc !important;
+}
+
+._4e4q {
+	border-bottom: 0 !important;
+}
+
+._73x- {
+    color: #eee !important;
+}
+
+/* notes */
+._5vb_, ._5vb_ #contentCol {
+    color: #ddd !important;
+}
+
+/* follow coworkers */
+._2mkv {
+    background-color: #333 !important;
+    border: 1px solid #555 !important;
+}
+
+/* suggestions header */
+._2od0 ._657q {
+    background-color: #444 !important;
+}
+
+/* search button text color */
+._517h, ._59pe:focus, ._59pe:hover {
+    color: #ddd !important;
+}
+
+._64nc,
+._74ic {
+    background-color: #333 !important;
+    border: 1px solid #444 !important;
+}
+
+/* events & post new thread box */
+._4-u2>._4-u3 {
+    border-top: 0 !important;
+}
+/* event datestamp */
+.fcb {
+    color: #ccc !important;
+}
+
+._ayb {
+    border-top: 1px solid #444 !important;
+}
+
+/* -------------------------------- settings page related settings -------------------------------- */
+
+._50f7 {
+    color: #eee;
+}
+
+.fbSettingsList .fbSettingsListItemLabel {
+    color: #eee !important;
+}
+
+.fbSettingsList .fbSettingsListItemSaved, 
+.fbSettingsList .fbSettingsListItemEdit {
+    color: lightBlue !important;
+}
+
+.fbSettingsSectionsItemName {
+	color: #eee !important;
+}
+
+._k7g {
+    background: #333 !important;
+}
+
+._15v9 {
+	border-bottom: 0 !important;
+}
+
+/* notifications boxes */
+._6opw {
+    background-color: #222 !important;
+}
+
+
+/* Home header in the main navigator */
+.r8mubyy5.kykouyfj.p8o7x76n {
+	display: none;
+}
+
+/* write a comment and tag a person */
+._247o {
+	background-color: inherit !important;
+}
+
+/* text color of a shared post */
+._5pco {
+    color: #ddd !important;
+}
+
+/* search box in group members view */
+._2s60 ._357t {
+    background-color: #222 !important;
+    border: 1px solid #333 !important;
+}
+
+/* embedded article in a post */
+._3eqz {
+    background-color: #333 !important;
+}
+
+/* minimize the useless "get started with workspace" banner */
+#workplace-top-of-feed-pagelet {
+	display: none;
+}
+
+/* embedded article */
+._2kml {
+    background-color: #444 !important;
+	border-color: #444 !important;
+}
+/* embedded article text */
+._dqb {
+	color: #eee !important;
+}
+
+/* search - box around result */
+._2yq ._4-u2::before {
+	border: 0 !important;
+}
+
+/* end of results text */
+_24k, ._64f, ._64f a {
+    background-color: #121212 !important;
+}
+
+/* border at the bottom of the article */
+._3x-2 ._5r69._1hvl {
+    border-bottom: 0 !important;
+}
+
+._3eqz ._3ekx {
+    border-bottom: 0 !important;
+}
+
+
+/* border radius settings */
+.sp55aj51 {
+    border-bottom-left-radius: var(--input-field-border-radius) !important;
+}
+.q1nbkmyk {
+    border-top-right-radius: var(--input-field-border-radius) !important;
+}
+.mhhz7anb {
+    border-bottom-right-radius: var(--input-field-border-radius) !important;
+}
+.jp8o2j3k {
+    border-top-left-radius: var(--input-field-border-radius) !important;
+}
+
+
+.h2jyy9rg {
+    border-top-right-radius: var(--input-field-border-radius) !important;
+}
+
+.br7hx15l {
+    border-top-left-radius: var(--input-field-border-radius) !important;
+}
+
+.n3ddgdk9 {
+    border-bottom-right-radius: var(--input-field-border-radius) !important;
+}
+
+.owxd89k7 {
+    border-bottom-left-radius: var(--input-field-border-radius) !important;
+}
+
+/* activity log */
+._z6j {
+    background-color: #222 !important;
+	border: 0 !important;
+}
+
+/* timeline */
+.fbTimelineSection.fbTimelineSectionTransparent {
+	margin-left: 50px !important;
+}
+
+.uiBoxWhite {
+	border: 1px solid #333 !important;
+}
+
+/* comment actions */
+._558b ._54ng {
+    background-color: #333 !important;
+	border: 1px solid #444 !important;
+}
+
+/* comment actions */
+._558b ._54nc {
+	border: 0 !important;
+}
+
+/* thread first post ... actions popup dividers */
+._558b ._54ak {
+    border-bottom: 1px solid #444 !important;
+}
+/* thread first post ... action text color */
+._2ezy {
+    color: #ddd !important;
+}
+
+/* find member input box */
+._55r1 {
+    background: #222 !important;
+}
+
+/* poll option */
+._2l5n ._58an {
+    background-color: #222 !important;
+	color: #ddd !important;
+}
+/* poll option border */
+._2l5l {
+    border: 1px solid #666 !important;
+}
+/* poll result bar */
+._3com {
+    background-color: #ddd !important;
+}
+/* poll result plus box */
+._43q8._49cb {
+    background-color: #555 !important;
+}
+/* profile page post box header */
+._3ubp {
+    background-color: #222 !important;
+    border-bottom: 1px solid #333 !important;
+}
+/* profile page post box header */
+._sg1 {
+    background-color: #222 !important;
+}
+/* profile: what teams are you on */
+._1yef {
+    background-color: var(--material-dark-background) !important;
+}
+/* topics from author color */
+._84-d {
+    color: rgb(173, 196, 200) !important;
+}
+
+
+/* Jan Terjes changes */
+._4d3w._u77 ._3t09 {
+	background-color: #333333;
+}
+
+div[role='navigation'][aria-label='Workplace'] {
+	background-color: #282828 !important; 
+}
+
+div[role='region'][aria-label='Messages'] {
+	background-color: #282828 !important; 
+}
+
+div._4_j4._7pj4[role="presentation"] {
+	background-color: #282828;
+}
+
+._6q1a ._5irm._7mkm {
+	background-color: rgb(35,35,35);
+}
+
+div._1mf _1mj {
+	color: rgb(240,240,240);;
+}
+
+div#placeholder-5uoc4 {
+	-webkit-text-fill-color: rgb(200,200,200);
+}
+
+div._4rv3._7og6 svg path {
+	fill: rgb(200,200,200);
+}
