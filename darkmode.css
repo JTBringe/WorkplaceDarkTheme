@@ -792,7 +792,11 @@ _24k, ._64f, ._64f a {
 
 /* Jan Terjes changes */
 ._4d3w._u77 ._3t09 {
-	background-color: #333333;
+	background-color: #333333 !important;
+}
+
+._6ijr {
+	background-color: rgb(75,75,75) !important;
 }
 
 div[role='navigation'][aria-label='Workplace'] {
