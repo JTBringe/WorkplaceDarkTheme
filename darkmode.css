@@ -808,7 +808,7 @@ div._4_j4._7pj4[role="presentation"] {
 }
 
 ._6q1a ._5irm._7mkm {
-	background-color: rgb(35,35,35);
+	background-color: rgb(35,35,35) !important;
 }
 
 div._1mf _1mj {
@@ -821,4 +821,21 @@ div#placeholder-5uoc4 {
 
 div._4rv3._7og6 svg path {
 	fill: rgb(200,200,200);
+}
+
+.h915hqog {
+	background-color: rgb(65,65,65) !important;
+}
+
+._6q1a ._hh7 {
+	color: rgb(240,240,240);
+}
+
+._6q1a ._hh7, ._6q1a ._hh7:active, ._6q1a ._-5k ._hh7 {
+	background-color: rgb(100,100,100);
+}
+
+div.uiScrollableAreaBody a {
+	color: rgb(83, 136, 130) !important;
+	font-weight: bold;
 }
