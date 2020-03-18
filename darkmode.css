@@ -888,3 +888,7 @@ span._3dlh._3dli {
 section.po7knmyp[role='complementary'] {
 	background-color: #333 !important;
 }
+
+header.po7knmyp [aria-label="Content Header"] [role="region"] {
+	background-color: #222 !important;
+}
