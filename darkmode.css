@@ -893,6 +893,18 @@ section.po7knmyp[role='complementary'] {
 	background-color: #222 !important;
 }
 
+div[aria-label="Quick Chat"] {
+	background-color: rgb(30,30,30) !important;
+}
+
+div[aria-label="Quick Chat"] .ek0il437 {
+	background-color: rgb(40,40,40);
+}
+
+div[aria-label="Quick Chat"] div.rnr61an3 {
+	background-color: rgba(100,100,100,0.25) !important;
+}
+
 ul.uiList._4kg li.tdgv6ycz div.rnr61an3 {
 	background-color: rgba(100,100,100,0.25) !important;
 }
