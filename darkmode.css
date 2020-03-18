@@ -893,6 +893,6 @@ section.po7knmyp[role='complementary'] {
 	background-color: #222 !important;
 }
 
-.uiList _4kg[role="grid"] li .rnr61an3 {
+ul.uiList._4kg[role="grid"][aria-label="Thread list"] li .rnr61an3 {
 	background-color: rgba(100,100,100,0.25) !important;
 }
