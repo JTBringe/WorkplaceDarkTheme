@@ -51,6 +51,10 @@ html {
   scrollbar-dark-shadow-color: #444;
 }
 
+body {
+	background-color: #121212;
+}
+
 ::-webkit-scrollbar { 
 	width: 12px; height: 3px; 
 }
@@ -919,4 +923,15 @@ ul.uiList._4kg li.tdgv6ycz div.rnr61an3 {
 
 a._ih- {
 	background-color: #333 !important;
+}
+
+._299d {
+	color: rgb(200,200,200);
+}
+
+._299e {
+	background-color: #333;
+}
+._299e:hover {
+	background-color: #555;
 }
