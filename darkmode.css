@@ -51,10 +51,6 @@ html {
   scrollbar-dark-shadow-color: #444;
 }
 
-body {
-	background-color: #121212;
-}
-
 ::-webkit-scrollbar { 
 	width: 12px; height: 3px; 
 }
@@ -794,7 +790,14 @@ _24k, ._64f, ._64f a {
 }
 
 
-/* Jan Terjes changes */
+
+
+/* JAN TERJES CHANGES */
+
+body {
+	background-color: #121212 !important;
+}
+
 ._4d3w._u77 ._3t09 {
 	background-color: #333333 !important;
 }
