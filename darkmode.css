@@ -951,7 +951,11 @@ a._ih- {
 	background.color: #999;
 }
 
-#workGalahadWebChromeEntity ._3cz, ._2w3>._30f {
+#workGalahadWebChromeEntity ._3cz, {
+	background-color: #333 !important;
+}
+
+._2w3>._30f {
 	background-color: #333 !important;
 }
 
