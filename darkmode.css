@@ -1022,3 +1022,7 @@ div._4-7n ._572u {
 ._8c74 a[aria-pressed="true"]{
 	font-size: 1.2em;
 }
+
+a[aria-pressed="true"]._3_16._6a-y._6svq::after {
+    content: "d";
+}
