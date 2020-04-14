@@ -1018,3 +1018,7 @@ div._4-7n ._572u {
 ._517h:hover {
 	background-color: rgb(50,50,54);
 }
+
+._8c74 a[aria-pressed="true"]{
+	font-size: 1.2em;
+}
