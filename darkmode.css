@@ -865,7 +865,7 @@ div.uiScrollableAreaBody a {
 
 span._3dlh._3dli {
 	color: rgb(240,240,240) !important;
-	//background-color: #333 !important;
+	background-color: #333 !important;
 }
 
 .c98fg2ug {
@@ -1036,8 +1036,12 @@ a[aria-pressed="true"]._3_16._6a-y._6svq::after {
 	background-color: #333 !important;
 }
 
-._5g03, ._39k2, ._39k5, ._78ta, ._78sv, ._78su  {
+._4-u3, ._5g03, ._39k2, ._39k5, ._78ta, ._78tc, ._78sv, ._78su  {
 	background-color: #333 !important;
+}
+
+p._6svu {
+	border-radius: 15px !important;
 }
 
 li.tdgv6ycz.hal92y33.ftjbd6cl.kqlegusg.eg3o40xf.f0w9ysip.mu99tzkh.oitujibm.t36ehdhz.sulwup3a.nplqc3z5.llwpk7e4.fqnkz0nq.jga1arsn.g1w82w5r.dxs9yoch.p9m48beo .m9osqain {
